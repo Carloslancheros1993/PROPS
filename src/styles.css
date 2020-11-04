@@ -1,0 +1,117 @@
+body {
+  margin: 0px;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: grid;
+  grid-template-areas:
+    "sidebar navbar"
+    "sidebar thumbcontainer";
+  grid-template-columns: 1fr 10fr;
+  grid-template-rows: 10% 90%;
+  height: 100vh;
+}
+.logo img {
+  display: block;
+  max-width: 50%;
+  max-height: 100%;
+  margin: 0 auto;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  border: dashed;
+  height: 95vh;
+  padding: 10px;
+}
+
+.navbar {
+  grid-area: navbar;
+  border: dashed;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+}
+
+.thumb-container {
+  grid-area: thumbcontainer;
+  border: dashed;
+}
+
+.navbar .icon {
+  margin: 0em 0.5em;
+  padding: 10px;
+  flex-basis: 5%;
+}
+
+.icon img {
+  max-width: 60%;
+}
+
+.thumb-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 2em;
+  height: 78vh;
+}
+
+.thumbnail {
+  border: dashed;
+  margin: 10px 10px;
+}
+
+.thumbnail img {
+  max-width: 100%;
+}
+
+.search-bar {
+  flex-basis: 50%;
+  border: dashed;
+  margin: 0px 5px 0px 5px;
+  width: 40vw;
+  height: 30px;
+}
+
+.logo {
+  flex-basis: 15%;
+  border: dashed;
+  height: 30px;
+}
+
+.login {
+  flex-basis: 15%;
+  border: dashed;
+  height: 30px;
+  width: 18vw;
+}
+.nav-img  img {
+  width: 90%;
+  height: 40px;
+  margin: 0px;
+}
+.nav-img {
+  border: dashed;
+  width: 5%;
+  height: 30px;
+  margin: 0px 8px;
+}
+.img-thum  img {
+  width: 100%;
+  padding-bottom: 80px;
+}
+.img-thum {
+  border: dashed;
+  margin: 8px;
+  max-width: 100%;
+}
+
+.icon img {
+  padding: 15px 5px 0px 5px; 
+  margin: 15px 0px 5px 0px;
+}
+.icon-img {
+  border: dashed;
+  margin-top: 10px;
+}
